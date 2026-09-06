@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-noir text-bone py-16 px-6 md:px-10">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-10">
         <div className="flex flex-col gap-4">
-          <Wordmark size="lg" tone="bone" />
+          <Wordmark size="lg" />
           <p className="text-sm text-bone/60 max-w-sm">
             Private gatherings in Scottsdale, AZ. By invitation only.
           </p>

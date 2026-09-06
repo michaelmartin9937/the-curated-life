@@ -31,9 +31,9 @@ export function Nav() {
   }, [hasHero]);
 
   // Two visual states:
-  //   solid (scrolled OR non-hero page) → bone background, noir text/wordmark, noir Apply button
-  //   transparent (top of hero page)    → no background, bone wordmark/text, bone Apply button with noir text
-  const wordmarkTone = scrolled ? "noir" : "bone";
+  //   solid (scrolled OR non-hero page) → bone background, noir text, noir Apply button
+  //   transparent (top of hero page)    → no background, bone text, bone Apply button with noir text
+  // The logo badge carries its own cream disc + bronze ring, so it reads in both states.
   const linkClass = scrolled
     ? "text-noir hover:text-bronze"
     : "text-bone hover:text-bronze drop-shadow-sm";
@@ -59,7 +59,7 @@ export function Nav() {
     >
       <nav className="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Wordmark size="md" tone={wordmarkTone} />
+          <Wordmark size="md" />
         </Link>
         <div className="flex items-center gap-5 sm:gap-8">
           {showHome && (
